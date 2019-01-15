@@ -47,7 +47,7 @@ namespace Demo.Server
 			loggerFactory.AddConsole();
 			loggerFactory.AddDebug();
 
-			//app.UseMiddleware<CustomExceptionMiddleware>();
+			app.UseMiddleware<CustomExceptionMiddleware>();
 			app.UseMvcWithDefaultRoute();
 		}
 	}
